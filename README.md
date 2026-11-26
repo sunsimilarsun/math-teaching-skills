@@ -13,6 +13,29 @@
 - [math-exam-analysis](skills/math-exam-analysis/SKILL.md) — 单次考试卷面分析。
 - [stage-learning-feedback](skills/stage-learning-feedback/SKILL.md) — 单页阶段学情反馈。
 
+## 一键安装四个家长反馈 Skill
+
+复制下面整段提示词，发给要安装这些 Skill 的 Agent。
+
+```text
+请从 GitHub 公开仓库 https://github.com/sunsimilarsun/math-teaching-skills 的 main 分支，一次性为当前 Agent 安装以下四个 Skill 和各自的配套模板、规范。请直接执行安装。
+
+- 周反馈：skills/weekly-student-feedback
+- 学习报告：skills/learning-report-author
+- 试卷分析：skills/math-exam-analysis
+- 阶段学情分析：skills/stage-learning-feedback
+
+使用当前 Agent 支持的 Skill 安装方式。若使用 Codex，优先用 skill-installer。只安装以上四个目录，每个目录完整保留，包括 SKILL.md 以及包内已有的 assets/、references/，确保相对链接仍然有效。遇到同名旧版时，先比较差异；有本地修改的先备份，再更新。
+
+安装后，请从实际安装位置逐项检查：
+1. 周反馈的五段文字骨架、课堂采集简表和反馈规范可以读取。
+2. 学习报告的三页 Word 模板和制作规范可以打开。
+3. 试卷分析的 A4 横向单页 Word 模板和审核规范可以打开。
+4. 阶段学情分析的单页 Word 模板、制作规范和教师采集审核单可以打开。
+
+最后列出四个 Skill 的安装位置和检查结果，说明是否需要重启 Agent 或新开会话，并给出一句可以直接试用的中文指令。
+```
+
 ## 使用与适配
 
 本仓库不包含题库、学生数据或插件，也不会自动安装、覆盖文件或部署任何软件。
