@@ -1,6 +1,6 @@
 # Math Teaching Skills
 
-面向数学教学资料工作流的三个实验性 Agent Skill：数学审校、讲义制作与题目吸收。
+面向数学教学资料工作流的七个实验性 Agent Skill，涵盖数学资料制作、审校与家长反馈。
 
 ## 内容
 
@@ -8,9 +8,16 @@
 - [`math-handout-author`](skills/math-handout-author/SKILL.md)：依据目标教学库的现行规范编写、改编或装配讲义；区分产品类型、标准答案、补充解析和独立检测。
 - [`math-item-ingest`](skills/math-item-ingest/SKILL.md)：从原稿或返回包吸收题目，核对稳定身份、重复、跨页、图片答案和题族关系；候选检查不修改正式库，正式接入遵循目标产品契约及授权。
 
+- [weekly-student-feedback](skills/weekly-student-feedback/SKILL.md) — 五段家长周反馈。
+- [learning-report-author](skills/learning-report-author/SKILL.md) — 三页学员学习报告。
+- [math-exam-analysis](skills/math-exam-analysis/SKILL.md) — 单次考试卷面分析。
+- [stage-learning-feedback](skills/stage-learning-feedback/SKILL.md) — 单页阶段学情反馈。
+
 ## 使用与适配
 
 本仓库不包含题库、学生数据、私有教学规范或插件，也不会自动安装、覆盖文件或部署任何软件。
+
+家长反馈 Skill 中的目录和版本号是项目配置示例。使用时请提供自己的模板、规范和授权使用的学生材料。
 
 1. 阅读所需 `SKILL.md` 和引用文件。
 2. 按所用 Agent 客户端的 Skill 安装方式，选择性导入对应目录。目录应保留 `SKILL.md` 与 `references/` 的相对位置；已有同名目录先比对，不盲目覆盖。
